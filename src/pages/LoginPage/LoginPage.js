@@ -38,13 +38,20 @@ const LoginPage = () => {
   return (
     <div className="loginpage">
       <h1 className="loginpage__title">Welcome</h1>
-      {user && <h2 className="loginpage__username">{user.displayName}</h2>}
+      {user ? (
+        <h2 className="loginpage__username">{user.displayName}</h2>
+      ) : (
+        <h2 className="loginpage__username">Loading User...</h2>
+      )}
       {user ? (
         <Link to="/home">
           <button className="loginpage__button">Continue</button>
         </Link>
       ) : (
-        <button className="loginpage__button" onClick={onSignInWithGoogle}>
+        <button
+          className="loginpage__button loginpage__button__signup"
+          onClick={onSignInWithGoogle}
+        >
           Sign up with Google
         </button>
       )}
