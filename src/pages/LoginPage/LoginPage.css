@@ -19,13 +19,12 @@
 .loginpage__button {
   background-color: #de726b;
   border: none;
-  width: 50vw;
+  width: 70vw;
   height: 60px;
   border-radius: 10px;
   color: white;
   font-size: 20px;
   transition: all 300ms;
-  position: relative;
 }
 
 .loginpage__button:hover {
