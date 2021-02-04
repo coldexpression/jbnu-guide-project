@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import MainPage from "./pages/MainPage/MainPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
+import {Provider} from 'react-redux';
+import store from './pages/MainPage/store';
 
 function App() {
   return (
@@ -11,9 +13,11 @@ function App() {
           <Route exact path="/login">
             <LoginPage />
           </Route>
-          <Route exact path="/home">
-            <MainPage />
-          </Route>
+          <Provider store={store}>
+             <Route exact path="/home">
+               <MainPage />     
+              </Route>
+          </Provider>
           <Route exact path="/profile">
             <ProfilePage />
           </Route>
