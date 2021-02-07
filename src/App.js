@@ -13,11 +13,9 @@ function App() {
           <Route exact path="/login">
             <LoginPage />
           </Route>
-          <Provider store={store}>
              <Route exact path="/home">
                <MainPage />     
               </Route>
-          </Provider>
           <Route exact path="/profile">
             <ProfilePage />
           </Route>

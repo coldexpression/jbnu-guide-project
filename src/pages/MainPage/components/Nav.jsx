@@ -1,20 +1,31 @@
 import React, { Component } from 'react'
+import "../components/design.css"
 
 export default class Nav extends Component {
     render() {
-        var tags = [];
-        for(var i=0; i<this.props.data.length; i++){
-            var d = this.props.data[i];
-            tags.push(<h2 key={d.id}><a href="#" data-id={d.id} onClick={function(e) {
-                this.props.onClick(Number(e.target.dataset.id));
-            }.bind(this)}>{d.title[0]}</a></h2>)
+        const handleOnClick = (e) => {
+            this.props.onClick(Number(e.target.dataset.id));
         }
+
+        const context = this.props.data.map((item) => (
+            <div className="navi__li">
+                 <h2 key={item.id}>
+                    <a href="#" data-id={item.id} onClick={handleOnClick.bind(this)}>
+                        {item.title[0]}
+                    </a>
+                </h2>
+            </div>
+        ))
+            
+
         return (
-            <nav>
-                <ol>
-                   {tags}
-                </ol>
-            </nav>
+            <body>
+                <nav className="navi">
+                    <ol className="navi__menu">
+                        {context}
+                    </ol>
+                </nav>
+            </body>
         )
     }
 }

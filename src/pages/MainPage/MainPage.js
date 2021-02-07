@@ -6,8 +6,6 @@ import ArticleContainer from "./containers/ArticleConnect"
 const MainPage = () => {
   return (
     <div>
-      
-
       <NavContainer></NavContainer>
 
       <ArticleContainer></ArticleContainer>
