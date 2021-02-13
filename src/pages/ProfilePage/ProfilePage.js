@@ -4,6 +4,7 @@ import { IconButton } from "@material-ui/core";
 import { authService } from "../../firebase";
 import "./ProfilePage.css";
 import { Link } from "react-router-dom";
+import ProfilePost from "./ProfilePost";
 
 const ProfilePage = () => {
   // 유저가 스크랩해둔 자료들은 추후 리덕스를 통해 가져옴
@@ -59,8 +60,7 @@ const ProfilePage = () => {
           <ul className="profilepage__postlist">
             {dummyPosts.map((post) => (
               <li>
-                <button>{post.question}</button>
-                <p>{post.answer}</p>
+                <ProfilePost post={post} />
               </li>
             ))}
           </ul>
