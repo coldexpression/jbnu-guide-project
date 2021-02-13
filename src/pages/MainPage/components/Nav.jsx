@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "../components/design.css"
+import "../MainPage.css"
 
 export default class Nav extends Component {
     render() {
@@ -22,6 +22,9 @@ export default class Nav extends Component {
             <body>
                 <nav className="navi">
                     <ol className="navi__menu">
+                        <a className="navi__header">
+                            전북대학교 가이드북
+                         </a>
                         {context}
                     </ol>
                 </nav>
