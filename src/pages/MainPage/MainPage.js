@@ -1,9 +1,14 @@
 import React from "react";
+import Header from "./components/Header"
+import NavContainer from "./containers/NavConnect"
+import ArticleContainer from "./containers/ArticleConnect"
 
 const MainPage = () => {
   return (
     <div>
-      <h1>MainPage</h1>
+      <NavContainer></NavContainer>
+
+      <ArticleContainer></ArticleContainer>
     </div>
   );
 };
