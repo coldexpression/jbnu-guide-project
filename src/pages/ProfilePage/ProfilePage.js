@@ -48,7 +48,7 @@ const ProfilePage = () => {
               src="https://images.unsplash.com/photo-1600267185393-e158a98703de?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTJ8fGF2YXRhcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
             />
             <h4 className="profilepage__userName">username</h4>
-            <div className="profilepage__userDetail">userdetail</div>
+            {/* <div className="profilepage__userDetail">userdetail</div> */}
           </div>
           <div className="profilepage__btnGroup">
             <button>Edit profile</button>
