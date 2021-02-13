@@ -15,10 +15,10 @@ const ProfilePage = () => {
     { id: 4, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
     { id: 5, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
     { id: 6, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
-    { id: 7, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
-    { id: 8, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
-    { id: 9, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
-    { id: 10, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
+    // { id: 7, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
+    // { id: 8, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
+    // { id: 9, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
+    // { id: 10, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
   ]);
 
   const [user, setUser] = useState({ id: "kimyb" });

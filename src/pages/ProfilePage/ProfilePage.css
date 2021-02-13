@@ -1,5 +1,6 @@
 .profilepage {
   background-color: #eee;
+  min-height: 100vh;
 }
 
 .profilepage__header {
