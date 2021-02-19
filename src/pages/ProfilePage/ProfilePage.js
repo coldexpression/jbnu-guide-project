@@ -7,22 +7,10 @@ import { Link } from "react-router-dom";
 import ProfilePost from "./ProfilePost";
 import { SignalCellularNullOutlined } from "@material-ui/icons";
 import { useHistory } from "react-router-dom";
+import dummyPosts from "./dummyPosts.json";
 
 const ProfilePage = () => {
   let history = useHistory();
-  // 유저가 스크랩해둔 자료들은 추후 리덕스를 통해 가져옴
-  const [dummyPosts, setDummyPosts] = useState([
-    { id: 1, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
-    { id: 2, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
-    { id: 3, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
-    { id: 4, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
-    { id: 5, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
-    { id: 6, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
-    { id: 7, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
-    { id: 8, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
-    { id: 9, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
-    { id: 10, question: "Q. 테스트 질문사항", answer: "A. blahblah" },
-  ]);
 
   const [user, setUser] = useState(null);
 
