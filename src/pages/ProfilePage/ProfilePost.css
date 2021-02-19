@@ -6,13 +6,28 @@
   width: 90vw;
   padding: 5px;
   border: none;
-  background: #de726b;
   border-radius: 10px;
   color: #fff;
   margin-bottom: 5px;
 }
 
-.profilepage__post > p {
+.profilepage__post > button.color78934F {
+  background: #78934f;
+}
+.profilepage__post > button.color9C5B5B {
+  background: #9c5b5b;
+}
+.profilepage__post > button.colorE7AB20 {
+  background: #e7ab20;
+}
+.profilepage__post > button.colorDE726B {
+  background: #de726b;
+}
+.profilepage__post > button.color4F5A93 {
+  background: #4f5a93;
+}
+
+.profilepage__post div {
   padding: 15px;
   max-width: 90vw;
   background: #fff;
@@ -21,11 +36,12 @@
   transition: all 300ms;
 }
 
-.profilepage__post > p.active {
-  height: auto;
+.profilepage__post div > header {
+  display: flex;
+  color: orange;
+  justify-content: flex-end;
 }
 
-.profilepage__post > p.nonActive {
-  height: 0;
-  padding: 0;
+.profilepage__post p {
+  color: #808080;
 }
