@@ -54,7 +54,7 @@ const ProfilePost = ({ post }) => {
               <DeleteIcon />
             </IconButton>
           </header>
-          <p>{answer}</p>
+          <p>A. {answer}</p>
         </div>
       ) : null}
     </div>
