@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
-import "../MainPage.css"
+import React, { Component } from "react";
+import "../MainPage.css";
 import { Link } from "react-router-dom";
 import  proFileImg  from './profile.png';
 import { Profiler } from 'react';
+
 
 export default class Nav extends Component {
     render() {
@@ -19,6 +20,7 @@ export default class Nav extends Component {
                 </h2>
             </div>
         ))
+
             
 
         return (
