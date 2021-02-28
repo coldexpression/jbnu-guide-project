@@ -1,3 +1,11 @@
+
+@font-face {
+    font-family: 'KimNamyun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KimNamyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
 }
@@ -25,16 +33,18 @@ article {
 }
 
 .navi__header {
+    font-family: 'KimNamyun';
     display: flex;
     padding-top: 6px;
     padding-right: 80px;
     text-align: center;
-    font-size: 24px;
+    font-size: 35px;
 }
 
 
 .navi__menu {
     display: flex;
+    
     list-style: none;
     padding-left: 0;
 }
@@ -42,15 +52,23 @@ article {
 .navi__li {
     font-family:  'Nanum Gothic', sans-serif;
     padding: 8px 12px 12px;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     transition: all 200ms;
     border-radius: 6px;
 }
 
 .navi__li:hover {
-    background-color: black;
+    background-color: #853d66;
     border-radius: 6px;
+}
+
+.navi__profile {
+    display:felx;
+    height: 50px;
+    width: 50px;
+    filter: invert(100%);
+    padding-left: 30px;
 }
 
 
@@ -59,19 +77,20 @@ article {
 .arti__title {
     padding: 20px 12px;
     
+
 }
 
 
 .arti__question {
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     border-top: 1px solid #bcbcbc;
     padding: 15px 12px;
 }
 
 .arti__answer {
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     padding-left: 20px;
     max-height: 0px;
     overflow: hidden;
@@ -82,7 +101,7 @@ article {
     max-height: 1000px;
 }
 
-
+/*
 @media screen and (max-width: 768px) {
     .navi {
         flex-direction: column;
@@ -96,7 +115,86 @@ article {
         border-bottom: white;
         padding-bottom: 20px;
         padding-left: 80px;
+       
+    }
+} */
+
+/* Phone DPI */
+@media screen and (min-width: 0px) and (max-width: 376px) {
+    .navi {
+        flex-direction: column;
     }
 
+    .navi__menu {
+        flex-direction: column;
+    }
+
+    .navi__header {
+        border-bottom: white;
+        padding-bottom: 20px;
+        padding-left: 80px;
+        font-size: 30px;
+    }
+
+    .navi__li {
+        font-size: 12px;
+    }
+
+    .navi__profile {
+        height: 27px;
+        width: 27px;
+        object-fit: cover;
+        padding-left: 135px;
+    }
+
+    .arti__question {
+        font-size: 18px;
+    }
+
+    .arti__answer {
+        font-size: 14px;
+    }
 }
+
+/* Tablet DPI */
+@media screen and (min-width: 377px) and (max-width: 808px) {
+    .navi {
+        flex-direction: column;
+    }
+
+    .navi__menu {
+        flex-direction: column;
+    }
+
+    .navi__header {
+        
+        padding-bottom: 20px;
+        padding-left: 80px;
+        font-size: 40px;
+    }
+
+    .navi__profile {
+        height: 35px;
+        width: 35px;
+        object-fit: cover;
+        padding-left: 155px;
+    }
+
+    .navi__li {
+        font-size: 14px;
+    }
+
+    .arti__question {
+        font-size: 20px;
+    }
+
+    .arti__answer {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
 

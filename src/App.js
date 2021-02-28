@@ -9,8 +9,13 @@ import {
 import LoginPage from "./pages/LoginPage/LoginPage";
 import MainPage from "./pages/MainPage/MainPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
+<<<<<<< HEAD
 import { authService } from "./firebase";
 import Initializing from "./pages/LoginPage/Initializing";
+=======
+import {Provider} from 'react-redux';
+import store from './redux/store';
+>>>>>>> dev
 
 function App() {
   const [init, setInit] = useState(false);
