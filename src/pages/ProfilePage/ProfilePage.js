@@ -8,6 +8,7 @@ import ProfilePost from "./ProfilePost";
 import { SignalCellularNullOutlined } from "@material-ui/icons";
 import { useHistory } from "react-router-dom";
 import dummyPosts from "./dummyPosts.json";
+import ProfileTabs from "./ProfileTabs";
 
 const ProfilePage = () => {
   let history = useHistory();
@@ -48,7 +49,8 @@ const ProfilePage = () => {
             <button onClick={handleLogOut}>Log out</button>
           </div>
         </div>
-        <div className="profilepage__postlistWrapper">
+        <ProfileTabs />
+        {/* <div className="profilepage__postlistWrapper">
           <ul className="profilepage__postlist">
             {dummyPosts.map((post) => (
               <li>
@@ -56,7 +58,7 @@ const ProfilePage = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
       </section>
     </div>
   );
