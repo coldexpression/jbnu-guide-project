@@ -1,0 +1,11 @@
+.initializing {
+  background-color: #eee;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.initializing > h1 {
+  color: #8b8b8b;
+}
