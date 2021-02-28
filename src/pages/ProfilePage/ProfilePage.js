@@ -45,7 +45,6 @@ const ProfilePage = () => {
             <h4 className="profilepage__userName">{user?.displayName}</h4>
           </div>
           <div className="profilepage__btnGroup">
-            <button>Edit Username</button>
             <button onClick={handleLogOut}>Log out</button>
           </div>
         </div>
