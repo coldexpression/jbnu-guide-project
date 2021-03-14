@@ -76,10 +76,7 @@ article {
 /* Article css */
 .arti__title {
     padding: 20px 12px;
-    
-
 }
-
 
 .arti__question {
     font-family: 'Nanum Gothic', sans-serif;
@@ -95,6 +92,14 @@ article {
     max-height: 0px;
     overflow: hidden;
     transition: all 500ms;
+}
+
+.arti__scrap {
+    
+    height: 50px;
+    width: 50px;
+    float: right;
+    
 }
 
 .checkbox:checked + .arti__slide + .arti__answer {

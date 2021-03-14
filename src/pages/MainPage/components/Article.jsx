@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 import "../MainPage.css"
+import  scrapImg  from './scrapImg.png';
+import { makeStyles } from '@material-ui/core/styles';
+import IconButton from '@material-ui/core/IconButton';
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 
 export default class Article extends Component {
     render(){
@@ -15,7 +19,11 @@ export default class Article extends Component {
                         </label>
                         <p className="arti__answer">
                             {this.props.desc[index]}
+                            <IconButton color="primary" aria-label="add to shopping cart">
+                                <AddShoppingCartIcon />
+                            </IconButton>
                         </p>
+                        
                     </div>
                     
                 )
