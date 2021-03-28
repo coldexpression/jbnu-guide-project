@@ -2,13 +2,12 @@ import { connect } from 'react-redux';
 import Article from '../components/Article';
 export default connect(
     function (state,user) {
-        var title,desc,explain,pic;
+        var title,desc,explain;
         
         if(state.mode === 'WELCOME'){
             title = state.welcome_content.title;
             desc = state.welcome_content.desc;
             explain = state.welcome_content.explain;
-            pic = "no";
         } else {
             for(var i=0; i<state.contents.length;i++){
                 var d = state.contents[i];
@@ -20,9 +19,6 @@ export default connect(
                         desc = user.major.map(value => {
                             return value.answer;
                         })
-                        pic = user.major.map(value => {
-                            return value.pic;
-                        })
                         explain = d.explain;
                     } else if(d.id === 2) {
                         title = user.living.map(value => {
@@ -30,9 +26,6 @@ export default connect(
                         })
                         desc = user.living.map(value => {
                             return value.answer;
-                        })
-                        pic = user.living.map(value => {
-                            return value.pic;
                         })
                         explain = d.explain;
                     } else if(d.id === 3) {
@@ -42,9 +35,6 @@ export default connect(
                         desc = user.enrollment.map(value => {
                             return value.answer;
                         })
-                        pic = user.enrollment.map(value => {
-                            return value.pic;
-                        })
                         explain = d.explain;
                     } else if(d.id === 4) {
                         title = user.scholarship.map(value => {
@@ -53,9 +43,6 @@ export default connect(
                         desc = user.scholarship.map(value => {
                             return value.answer;
                         })
-                        pic = user.scholarship.map(value => {
-                            return value.pic;
-                        })
                         explain = d.explain;
                     } else if(d.id === 5) {
                         title = user.support.map(value => {
@@ -63,9 +50,6 @@ export default connect(
                         })
                         desc = user.support.map(value => {
                             return value.answer;
-                        })
-                        pic = user.support.map(value => {
-                            return value.pic;
                         })
                         explain = d.explain;
                     }
@@ -89,8 +73,7 @@ export default connect(
         return {
             title:title,
             desc:desc,
-            explain:explain,
-            pic:pic
+            explain:explain
         }
     }
 )(Article);

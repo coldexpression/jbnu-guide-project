@@ -15,12 +15,6 @@ a {
     text-decoration: none;
 }
 
-img {
-    width:600px;
-    height:400px;
-    object-fit: scale-down;
-}
-
 .checkbox {
     
     display: none;
@@ -94,7 +88,7 @@ article {
 .arti__answer {
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 15px;
-    padding-left: 40px;
+    padding-left: 20px;
     max-height: 0px;
     overflow: hidden;
     transition: all 500ms;
@@ -107,8 +101,6 @@ article {
     float: right;
     
 }
-
-
 
 .checkbox:checked + .arti__slide + .arti__answer {
     max-height: 1000px;
